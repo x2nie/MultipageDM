@@ -1,0 +1,7 @@
+*.o
+*.ppu
+*.compiled
+lib/
+backup/**
+
+mptabs.*

@@ -1,0 +1,82 @@
+object DmWrapperForm: TDmWrapperForm
+  Left = 1786
+  Height = 174
+  Top = 419
+  Width = 496
+  Caption = 'DmWrapperForm'
+  ClientHeight = 174
+  ClientWidth = 496
+  OnClose = FormClose
+  OnResize = FormResize
+  LCLVersion = '2.2.3.0'
+  object Panel1: TPanel
+    Left = 0
+    Height = 20
+    Top = 154
+    Width = 496
+    Align = alBottom
+    BevelOuter = bvNone
+    ClientHeight = 20
+    ClientWidth = 496
+    TabOrder = 0
+    object Button1: TButton
+      Left = 0
+      Height = 20
+      Top = 0
+      Width = 128
+      Align = alLeft
+      Caption = 'Button1'
+      OnClick = Button1Click
+      TabOrder = 0
+    end
+    object Splitter1: TSplitter
+      Left = 128
+      Height = 20
+      Top = 0
+      Width = 6
+    end
+    object Corner: TPanel
+      Left = 480
+      Height = 20
+      Top = 0
+      Width = 16
+      Align = alRight
+      BevelOuter = bvNone
+      TabOrder = 2
+    end
+    object HScrollBar: TScrollBar
+      Left = 134
+      Height = 17
+      Top = 0
+      Width = 346
+      Align = alClient
+      Max = 200
+      PageSize = 150
+      Position = 50
+      TabOrder = 3
+      OnChange = HScrollBarChange
+    end
+  end
+  object ScrollBox: TScrollBox
+    Left = 0
+    Height = 154
+    Top = 0
+    Width = 496
+    HorzScrollBar.Page = 1
+    HorzScrollBar.Visible = False
+    VertScrollBar.Page = 154
+    Align = alClient
+    BorderStyle = bsNone
+    ClientHeight = 154
+    ClientWidth = 479
+    TabOrder = 1
+    object Label1: TLabel
+      Left = 30
+      Height = 16
+      Top = 157
+      Width = 41
+      Caption = 'Label1'
+      ParentColor = False
+    end
+  end
+end

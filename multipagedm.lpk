@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Package Version="5">
+    <Name Value="MultipageDM"/>
+    <Type Value="DesignTime"/>
+    <Author Value="x2nie - Fathony"/>
+    <CompilerOptions>
+      <Version Value="11"/>
+      <SearchPaths>
+        <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
+      </SearchPaths>
+      <Linking>
+        <Debugging>
+          <DebugInfoType Value="dsDwarf3"/>
+        </Debugging>
+      </Linking>
+    </CompilerOptions>
+    <Description Value="Show TabControl for TDataModule design time"/>
+    <License Value="LGPL"/>
+    <Version Minor="1"/>
+    <Files>
+      <Item>
+        <Filename Value="dmwrapper.pas"/>
+        <UnitName Value="DmWrapper"/>
+      </Item>
+      <Item>
+        <Filename Value="multipagedmdsigner.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="MultipageDmDsigner"/>
+      </Item>
+    </Files>
+    <RequiredPkgs>
+      <Item>
+        <PackageName Value="IDEIntf"/>
+      </Item>
+      <Item>
+        <PackageName Value="FCL"/>
+      </Item>
+    </RequiredPkgs>
+    <UsageOptions>
+      <UnitPath Value="$(PkgOutDir)"/>
+    </UsageOptions>
+    <PublishOptions>
+      <Version Value="2"/>
+      <UseFileFilters Value="True"/>
+    </PublishOptions>
+  </Package>
+</CONFIG>
